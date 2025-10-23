@@ -2,28 +2,16 @@
 <manifest>
 
   <remote name="pixel"
-          fetch="https://github.com/PixelExperience"
-          revision="ten"
-          review="gerrit.pixelexperience.org" />
+    fetch="https://github.com/PixelExperience"
+    revision="ten" />
 
   <remote name="pixel-devices"
           fetch="https://github.com/PixelExperience-Devices"
           revision="ten" />
 
-  <remote name="pixel-gitlab"
-          fetch="https://gitlab.com/PixelExperience"
+  <remote name="khaikate"
+          fetch="https://github.com/Khaikate"
           revision="ten" />
-
-  <remote name="pixel-gitlab-self-hosted"
-          fetch="https://gitlab.pixelexperience.org/android"
-          revision="ten" />
-
-  <remote name="pixel-devices-blobs"
-          fetch="https://gitlab.pixelexperience.org/android/vendor-blobs"
-          revision="ten" />
-
-  <remote name="gitlab"
-          fetch="https://gitlab.com" />
 
   <!-- CodeAurora additions -->
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="pixel" />
@@ -99,7 +87,7 @@
   <project path="manifest" name="manifest" remote="pixel" />
   <project path="platform_testing" name="platform_testing" remote="pixel" />
   <project path="vendor/aosp" name="vendor_aosp" remote="pixel" />
-  <project path="vendor/gapps" name="vendor_gapps" remote="pixel-gitlab" clone-depth="1" />
+  <project path="vendor/gapps" name="vendor_gapps" remote="khaikate" clone-depth="1" />
   <project path="vendor/pixelstyle" name="vendor_pixelstyle" remote="pixel" />
   <project path="vendor/google-customization" name="vendor_google-customization" remote="pixel" />
 
@@ -162,8 +150,7 @@
   <project path="external/libexif" name="external_libexif" remote="pixel" />
   <project path="external/libhevc" name="external_libhevc" remote="pixel" />
   <project path="external/libtextclassifier" name="external_libtextclassifier" remote="pixel" />
-  <project path="external/motorola/faceunlock" name="external_motorola_faceunlock" remote="pixel-gitlab-self-hosted" />
-  <project path="external/motorola/faceunlock-res" name="external_motorola_faceunlock-res" remote="pixel" />
+  <project path="external/motorola/faceunlock" name="external_motorola_faceunlock" remote="khaikate" />
   <project path="external/selinux" name="external_selinux" remote="pixel" />
   <project path="external/sonivox" name="external_sonivox" remote="pixel" />
   <project path="external/skia" name="external_skia" remote="pixel" />
